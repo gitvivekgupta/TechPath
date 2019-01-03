@@ -1,3 +1,5 @@
+# TechStack is under construction, feel free too contribute
+
 TechStack is a platform built with a motivation to enhance technical discussions, innovation and coding standards across the computer science industry. This is a platform for developers where they can read, write and discuss about the new technology penetrations and also get better perspectives on old technology. This community is aimed to serve the concept of paradigm shift for developers with respect to various technologies across the globe.
 
 Use case: 

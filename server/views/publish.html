@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+
+        <title>Publish Your Article</title> 
+
+        <title>User Blogs</title> <!-- if signed in otherwise community blogs-->
+        <meta name="description" content="Techstack is a best developer community to be innovative and Informative.">
+        <meta name="author" content="Vivek">
+        
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- Included CSS files  -->    
+        
+        <link rel="stylesheet" type="text/css"  href="/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css"  href="/css/chosen.css">
+        <link rel="stylesheet" type="text/css"  href="/css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css"  href="/css/bootstrap-theme.css">    
+        <link rel="stylesheet" type="text/css"  href="/css/fontawesome.css"> 
+        <link rel="stylesheet" type="text/css"  href="/css/main.css">
+        <link rel="stylesheet" type="text/css"  href="/css/color-night.css" id="set_color">   
+        
+        <link rel="stylesheet" type="text/css"  href="/css/custom.css">
+        <link rel="stylesheet" type="text/css"  href="/css/blogstyle.css" >
+        
+        <link rel="stylesheet" type="text/css"  href="/css/animate.css">  
+        <link rel="stylesheet" type="text/css"  href="/css/main.css">
+        <link rel="stylesheet" type="text/css"  href="/css/style.css">    
+        <link rel="stylesheet" type="text/css"  href="/css/base.css"> 
+        <link rel="stylesheet" type="text/css"  href="/css/color-night.css" id="set_color">   
+        <link rel="stylesheet" type="text/css"  href="/css/custom.css">
+        <link rel="stylesheet" type="text/css" href="/css/techarticle.css" >
+        
+        </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <div class="header noborder menuOpen miniView" >
+        <div class="container">
+          <div class="row-fluid">
+    
+            <div class="col-md-2 removePadding">
+              <!-- Place your logo here -->
+              <div class="logo" >
+                  <a href="/" class="menu_link"><img src="https://www.techstack.in/images/logoheader.png" alt="logo text"></a>
+              </div>
+                    
+              <div class="mobile_menu_btn">  
+              </div>
+            </div>
+    
+            <div class="col-md-10 mobi">
+              <div class="container-fluid mobi">
+                <div class="row mobi" >
+                  <!-- Site Menu -->
+                  <div class="col-md-12 mobi"> 
+                    <nav class="header_content">
+
+                      <ul class="nav">
+
+                        <!--  Add require site page navigation -->  
+                        <li><a href="/" class="first active"> <i class="fa fa-circle-o"></i>Home</a></li>  
+                        <li><a href="/blog"> <i class="fa fa-circle-o"></i>User Blogs</a></li>
+
+                          <input type="image" class="btn btn-primary dropdown-toggle" id="user-avtar" src="/images/account.png" class="btn btn-primary" data-toggle="dropdown" />
+                          <span class="caret"></span>
+                            <ul class="dropdown-menu" id="profiledropdown">
+                              <li><a href="/profile">Profile</a></li>
+                              <li><a href="/settings">Account Setting</a></li>
+                            </ul>
+
+                      </ul>
+                    </nav>                          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>   
+    </div> 
+
+  <div class="tech-art-header">
+    <span><img src="/images/logoheader.png"></span>
+  </div>
+
+  <span><h1 class="info-header">Publish your passion, your own way!</h1></span>
+
+  <form action="">
+
+      <span><input class="title-input" type="text" placeholder="Add Title" required /></span><br><br>
+      <!-- <span><input class="tech-input" type="text" placeholder="Tech stack" required /></span> -->
+
+      <span>
+        <select class="names" multiple>
+          <option value="Javascript">Javascript</option>
+          <option value="Java">Java</option>
+          <option value="NodeJs">NodeJs</option>
+          <option value="C++">C++</option>
+          <option value="Python">Python</option>
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="MATLAB">MATLAB</option>
+          <option value="COBOL">COBOL</option>
+          <option value="ECMAScript">ECMAScript</option>
+        </select>
+      </span><br>
+
+      <span><input class="company-input" type="text" placeholder="Company Name" required /></span><br><br>
+
+      <textarea class="blogtext" rows="10" cols="30"></textarea> <br>  
+
+      <button type="submit" class="publish" onclick="publishblogdata()">Publish Post</button>
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  Included javascript files  -->
+
+  <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script> 
+  <script type="text/javascript" src="https://www.techstack.in/js/SmoothScroll.js"></script>  
+  <script type="text/javascript" src="/javascripts/jquery.transit.js"></script> 
+  <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script> 
+
+  <script type="text/javascript" src="https://www.techstack.in/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="https://www.techstack.in/js/jquery.knob.js"></script>   
+
+  <script type="text/javascript" src="/javascripts/chosen.jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/blog.js"></script>
+
+  <script type="text/javascript" src="https://www.techstack.in/js/jquery.magnific-popup.min.js"></script> 
+  <script type="text/javascript" src="https://www.techstack.in/js/jquery.support.plugin.min.js"></script>
+  <script type="text/javascript" src="https://www.techstack.in/js/custom.min.js"></script> 
+
+  <script type="text/javascript" src="https://www.techstack.in/js/video.min.js"></script>
+  <script type="text/javascript" src="https://www.techstack.in/js/bigvideo.js"></script>    
+
+  <script type="text/javascript" src="https://www.techstack.in/js/main-fm.min.js"></script>
+
+  <script type="text/javascript" src="/javascripts/suggest.js"></script>
+  <script type="text/javascript" src="/javascripts/techarticle.js"></script>
+  <script type="text/javascript" src="/javascripts/require.js"></script>
+  <script type="text/javascript" src="https://www.techstack.in/js/modernizr.min.js"></script>
+
+</body>
+
+</html>

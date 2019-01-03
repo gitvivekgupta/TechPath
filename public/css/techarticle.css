@@ -1,0 +1,116 @@
+.tech-art-header {
+  border-bottom: 0.1px solid #000;
+}
+  .tech-art-header input {
+    height: 4em;
+    margin-left: 97em;
+    margin-top: 1em;
+
+  }
+
+.title-input {
+	padding: 0.3em;
+	width: 25em;
+	margin-top: 1em;
+	margin-left: 5em;
+	border: transparent;
+  background-color: black;
+
+}
+input::placeholder {
+  color: rgb(212, 208, 208);
+  font-size: 1em;
+  
+}
+
+input[type="text"]
+{
+    font-size: 30px;
+}
+
+.tech-input {
+  padding: 0.5em;
+  width: 20em;
+  margin-top: 4em;
+  margin-left: 5em;
+  border: transparent;
+  position: fixed;
+  border-bottom: 1px solid;
+}
+
+#profiledropdown {
+  margin-left: 25em;
+}
+
+/*suggestion----- */
+
+#suggest {
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCFF;
+    font-size: 90%;
+    width: 200px;
+}
+#suggest div {
+    display: block;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#suggest div.select{ /* keydown, keyup */
+    color: #FFFFFF;
+    background-color: #3366FF;
+}
+#suggest div.over{ /* mouse over */
+    background-color: #99CCFF;
+}
+
+
+/* page css */
+
+#user-avtar {
+  height: 4em;
+  width: 5em;
+  margin-top: 1em;
+  margin-left: 10em;
+} 
+
+.company-input {
+	padding: 0.3em;
+	width: 20em;
+	margin-top: 1 em;
+	border: transparent;
+  background-color: black;
+  margin-left: 5em;
+
+}
+
+.blog-input {
+
+  width: 30em;
+  height: 20em;
+	margin-top: 1 em;
+	border: transparent;
+  background-color: black;
+  margin-left: 5em;
+}
+
+.blogtext {
+  width: 70em;
+  margin-left: 9em;
+  height: 50em;
+  font: medium -moz-fixed;
+  
+}
+
+.publish {
+  margin-left: 12em;
+  margin-top: 2em;
+}
+
+.info-header {
+  border-bottom: 2px solid #000;
+  padding: 1em 0 1em; 
+  font-size: 2em;
+  margin-left: 3em;
+}

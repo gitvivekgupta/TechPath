@@ -1,0 +1,148 @@
+@font-face {
+    font-family: menu_font;
+    src: url(../fonts/opensans-light-webfont.eot);
+    src: url(../fonts/opensans-light-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/opensans-light-webfont.woff) format('woff'),url(../fonts/opensans-light-webfont.ttf) format('truetype'),url(../fonts/opensans-light-webfont.svg#open_sanslight) format('svg');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:body_font;src:url(../fonts/droidsans-webfont.eot);src:url(../fonts/droidsans-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/droidsans-webfont.woff) format('woff'),url(../fonts/droidsans-webfont.ttf) format('truetype'),url(../fonts/droidsans-webfont.svg#droid_sansregular) format('svg');font-weight:400;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:body_font;src:url(../fonts/droidsans-bold-webfont.eot);src:url(../fonts/droidsans-bold-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/droidsans-bold-webfont.woff) format('woff'),url(../fonts/droidsans-bold-webfont.ttf) format('truetype'),url(../fonts/droidsans-bold-webfont.svg#droid_sansbold) format('svg');font-weight:700;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');font-weight:300;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');font-weight:400;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');font-weight:500;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');font-weight:600;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');v
+          font-weight:700;font-style:normal;
+  }
+  
+  @font-face {
+    font-family:header_font;src:url(../fonts/bebasneue-webfont.eot);src:url(../fonts/bebasneue-webfont-.eot#iefix) format('embedded-opentype'),url(../fonts/bebasneue-webfont.woff) format('woff'),url(../fonts/bebasneue-webfont.ttf) format('truetype'),url(../fonts/bebasneue-webfont.svg#OswaldRegular) format('svg');font-weight:800;font-style:normal;
+  }
+  
+  body {
+    font-family: body_font,sans-serif;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  
+  h1,h2,h3 {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  h4,h5,h6,p {
+    font-family: body_font,sans-serif;
+  }
+  
+  .header .header_content ul li ul li a,.header_content ul li a,.header_content ul li ul li a {
+    font-family: menu_font,sans-serif;
+  }
+  
+  .fontFamily_1 {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .fontFamily_2,.title_text {
+    font-family: body_font,sans-serif;
+  }
+  
+  .title_text_large {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .font_medium {
+    font-family: body_font,sans-serif;
+  }
+  
+  .largeText_borderBoxed,.largeText_boxed {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .button.large,.comment .comment-area p,.comment .comment-aut .reply,.num_likes,button.large {
+    font-family: body_font,sans-serif;
+  }
+  
+  .tweet-wrapper span.time,.tweet-wrapper span.user {
+    font-family: body_font,sans-serif!important;
+  }
+  
+  .flex_slideshow_tweet .slides li .tweet-wrapper .text {
+    font-family: body_font,sans-serif;
+    font-size: 18px!important;
+  }
+  
+  .flex_slideshow_tweet .slides li .tweet-wrapper h6 {
+    font-family: body_font,sans-serif;
+    font-size: 14px!important;
+  }
+  
+  .sec_title {
+    font-family: body_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .thumbItem_holder .carousel_thumbails .thumbItem h3 {
+    font-family: body_font,sans-serif;
+  }
+  
+  .withoutThumb ul.carousel_thumbails li:before {
+    font-family: body_font;
+  }
+  
+  .nav-tabs>li a {
+    font-family: body_font,sans-serif;
+  }
+  
+  .fullScreenGallery_thumbnails a.fxEmbossBtn {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .homeSlider h1,.title_bottom h4,.title_top h4 {
+    font-family: header_font,sans-serif;
+  }
+  
+  .homeSlider h1 {
+    text-transform: uppercase;
+  }
+  
+  .item .text_field,.item .text_field h5,.item_sub_title,.linkText,.options_title,.options_title h6,.pricing-table h2,.sliderNumber_pro,.view h2,a.close_button_pro,a.next_button_pro,a.previous_button_pro {
+    font-family: body_font,sans-serif;
+  }
+  
+  .pricing-table h2 .price_circle,.pricing-table h2 .title {
+    font-family: header_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .itemOver .overlay .popup_overlay .popup_foot h4,.item_feature>li .title,.readMore,ul.tools li {
+    font-family: body_font,sans-serif;
+  }
+  
+  .fxButton .btn_icon h5:nth-child(1),.fxButton .btn_icon h5:nth-child(2) {
+    font-family: body_font,'Trebuchet MS',sans-serif;
+  }
+  
+  .comments-form label {
+    font-family: header_font,sans-serif;
+  }
+  
+  .boxed_links a {
+    font-family: body_font,sans-serif;
+  }

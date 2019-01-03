@@ -1,0 +1,73 @@
+Ada
+ALGOL
+SMALL Machine Algol Like Language
+Alma-0
+BASIC
+BCPL
+BLISS
+C
+C++
+C#
+Ceylon
+CHILL
+ChucK
+COBOL
+Cobra
+ColdFusion
+Combined Programming Language
+Curl
+D
+DASL
+eC
+ECMAScript
+ActionScript
+ECMAScript for XML
+JavaScript
+JScript
+Eiffel
+Fortran
+F
+GAUSS
+Go
+Harbour
+HyperTalk
+Java
+Groovy
+Join Java
+Tea
+JOVIAL
+Julia
+Lasso
+Modula-2
+Mathematica
+MATLAB
+Mesa
+MUMPS
+Nemerle
+Nim
+Oberon and Oberon-2
+Component Pascal
+Seneca
+Occam
+Oriel
+Pascal
+Free Pascal
+Object Pascal
+PCASTL
+Perl
+Pike
+PL/C
+PL/I
+Plus
+PROSE
+Python
+R
+Rapira
+RPG
+Rust
+S-Lang
+VBScript
+Visual Basic
+Visual FoxPro
+Wolfram Language
+X++

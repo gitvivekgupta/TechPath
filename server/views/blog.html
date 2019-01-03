@@ -1,0 +1,253 @@
+  <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Basic Page Needs-->
+<meta charset="utf-8">
+<title>User Blogs</title> <!-- if signed in otherwise community blogs-->
+<meta name="description" content="Techstack is a best developer community to be innovative and Informative.">
+<meta name="author" content="Vivek">
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  
+<!-- Included CSS files  -->    
+
+<link rel="stylesheet" type="text/css"  href="/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="/css/chosen.min.css">
+<link rel="stylesheet" type="text/css"  href="/css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css"  href="/css/bootstrap-theme.css">    
+<link rel="stylesheet" type="text/css"  href="/css/fontawesome.css"> 
+<link rel="stylesheet" type="text/css"  href="/css/main.css">
+<link rel="stylesheet" type="text/css"  href="/css/color-night.css" id="set_color">   
+
+<link rel="stylesheet" type="text/css"  href="css/custom.css">
+<link href="css/blogstyle.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css"  href="/css/animate.css">  
+<link rel="stylesheet" type="text/css"  href="/css/main.css">
+<link rel="stylesheet" type="text/css"  href="/css/style.css">    
+<link rel="stylesheet" type="text/css"  href="/css/base.css"> 
+<link rel="stylesheet" type="text/css"  href="/css/color-night.css" id="set_color">   
+<link rel="stylesheet" type="text/css"  href="/css/custom.css">
+
+</head>
+
+<body>
+
+  <div class="header noborder menuOpen miniView" >
+    <div class="container">
+      <div class="row-fluid">
+
+        <div class="col-md-2 removePadding">
+          <!-- Place your logo here -->
+          <div class="logo" >
+              <a href="/" class="menu_link"><img src="https://www.techstack.in/images/logoheader.png" alt="logo text"></a>
+          </div>
+                
+          <div class="mobile_menu_btn">  
+          </div>
+        </div>
+
+        <div class="col-md-10 mobi">
+          <div class="container-fluid mobi">
+            <div class="row mobi" >
+              <!-- Site Menu -->
+              <div class="col-md-12 mobi"> 
+
+                <nav class="header_content">
+                  <ul class="nav">
+                    <!--  Add require site page navigation -->  
+                    <li><a href="/" class="first active"> <i class="fa fa-circle-o"></i>Home</a></li>                       
+                    <li><a href="/publish"> <i class="fa fa-circle-o"></i>Publish Your Blog</a></li>
+
+                    <input type="image" class="btn btn-primary dropdown-toggle" id="user-avtar" src="/images/account.png" class="btn btn-primary" data-toggle="dropdown" />
+                    <span class="caret"></span>
+                      <ul class="dropdown-menu" id="profiledropdown">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Account Setting</a></li>
+                      </ul>      
+                  </ul>
+                </nav>  
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>   
+  </div>  
+
+  <div class="wrap-content">
+
+    <div>
+
+      <div class="diamond_content" id="blogdiamond">
+        <h4 class="mini_heading small removePadding">Come, Learn & Develop</h4>
+        <h5 style="margin-left: 27em;"><a class="signup" href="signup.html">Join Techstack Now</a></h5>
+        <hr>             
+      </div>  
+
+      <span class="size-40 title">
+        Check Yor Interest:
+      </span>
+
+      <span>
+        <select class="names">
+          <option value="Everything" onclick="render_random_blogs()">Everything</option>
+          <option value="Javascript" onclick="render_js_blog()">Javascript</option>
+          <option value="Java" onclick="render_java_blog()">Java</option>
+          <option value="NodeJs" onclick="render_nodejs_blog()">NodeJs</option>
+          <option value="C++" onclick="render_cplus_blog()">C++</option>
+          <option value="Python" onclick="render_python_blog()">Python</option>
+          <option value="C" onclick="render_c_blog()">C</option>
+          <option value="C#" onclick="render_chash_blog()">C#</option>
+          <option value="MATLAB" onclick="render_matlab_blog()">MATLAB</option>
+          <option value="COBOL" onclick="render_cobol_blog()">COBOL</option>
+          <option value="ECMAScript" onclick="render_ecmascript_blog()">ECMAScript</option>
+        </select>
+      </span>
+
+    </div>
+    
+    <div>
+
+      <ul class="card-list" id="showblog">
+
+        <!-- <li class="card-listitem card-featured" id="bigli">
+
+          <div class="card">
+
+            <div class="card-image">
+              <a href="#">
+                <img src="#" />
+              </a>
+            </div>
+  
+            <div class="card-content">
+
+              <p class="card-date">{date of publish}</p>
+
+              <h3 class="card-heading">
+                <a href="#">{blog heading}</a>
+              </h3>
+
+              <div class="card-author">
+                <a href="#">
+                  <img src="#" />
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li> -->
+
+        <!-- <li class="card-listitem">
+
+          <div class="card">
+
+            <div class="card-image">
+              <a href="#">
+                <img src="#" />
+              </a>
+            </div>
+  
+            <div class="card-content">
+
+              <p class="card-date">{date of publish}</p>
+
+              <h3 class="card-heading">
+                <a href="#">{blog heading}</a>
+              </h3>
+
+              <div class="card-author">
+                <a href="#">
+                  <img src="#" />
+                </a>
+              </div>
+              
+            </div>
+          </div>
+
+        </li> -->
+  
+      </ul>
+
+      <!-- <div class="load-more">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+        <p>LOADING NEW CONTENT</p>
+      </div> -->
+
+    </div>
+
+  </div>
+
+  <!-- <div class="pagination" id="pagecount">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div> -->
+
+  <!-- contactus page -->
+
+  <div data-id="!contactus" class="contentWrapper backGround contactPage" >
+
+    <div class="top_space">
+    </div>
+
+      <hr class="separator_desktop">
+
+      <div class="container" >        
+        <div class="row">  
+          <div class="col-md-12">  
+          </div>           
+        </div> 
+      </div>
+
+      <hr class="separator_max">
+    
+    <div class="container" >
+
+    </div>
+  </div>
+
+  <!--  Included javascript files  -->
+
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script> 
+    <script type="text/javascript" src="https://www.techstack.in/js/SmoothScroll.js"></script>  
+    <script type="text/javascript" src="/javascripts/jquery.transit.js"></script> 
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script> 
+ 
+    <script type="text/javascript" src="https://www.techstack.in/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="https://www.techstack.in/js/jquery.knob.js"></script>   
+
+    <script type="text/javascript" src="/javascripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/blog.js"></script>
+
+    <script type="text/javascript" src="https://www.techstack.in/js/jquery.magnific-popup.min.js"></script> 
+    <script type="text/javascript" src="https://www.techstack.in/js/jquery.support.plugin.min.js"></script>
+    <script type="text/javascript" src="https://www.techstack.in/js/custom.min.js"></script> 
+
+    <script type="text/javascript" src="https://www.techstack.in/js/video.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bigvideo.js"></script>    
+
+    <script type="text/javascript" src="https://www.techstack.in/js/main-fm.min.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://h:123456v@ds145574.mlab.com:45574/hackthon2';
+var dbURI = 'mongodb://pinkman:<dbpassword>@ds121163.mlab.com:21163/techpath';
 
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;

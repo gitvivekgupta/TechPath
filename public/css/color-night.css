@@ -597,13 +597,9 @@ hr.borderBottom.dark {
 }
 
 .move_down,.move_up {
-  background: url(../images/footer_bg_night.png) center top no-repeat;
-  background-image: -Webkit-image-set(url(../images/footer_bg_night.png) 1x,url(../images/footer_bg_night@2x.png) 2x);
 }
 
 .move_up {
-  background: url(../images/header_bg_night.png) center top no-repeat;
-  background-image: -Webkit-image-set(url(../images/header_bg_night.png) 1x,url(../images/header_bg_night@2x.png) 2x);
 }
 
 .black_color {
@@ -988,12 +984,7 @@ input[type=submit],input[type=reset],input[type=button] {
 
 .blueBackground {
   background: rgba(242,246,248,1);
-  background-image: url(../images/spiral.png),-moz-linear-gradient(-45deg,rgba(242,246,248,1) 0,rgba(168,220,255,1) 50%,rgba(224,239,249,1) 100%);
-  background-image: url(../images/spiral.png),-webkit-gradient(left top,right bottom,color-stop(0,rgba(242,246,248,1)),color-stop(50%,rgba(168,220,255,1)),color-stop(100%,rgba(224,239,249,1)));
-  background-image: url(../images/spiral.png),-webkit-linear-gradient(-45deg,rgba(242,246,248,1) 0,rgba(168,220,255,1) 50%,rgba(224,239,249,1) 100%);
-  background-image: url(../images/spiral.png),-o-linear-gradient(-45deg,rgba(242,246,248,1) 0,rgba(168,220,255,1) 50%,rgba(224,239,249,1) 100%);
-  background-image: url(../images/spiral.png),-ms-linear-gradient(-45deg,rgba(242,246,248,1) 0,rgba(168,220,255,1) 50%,rgba(224,239,249,1) 100%);
-  background-image: url(../images/spiral.png),linear-gradient(135deg,rgba(242,246,248,1) 0,rgba(168,220,255,1) 50%,rgba(224,239,249,1) 100%);
+
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -1079,9 +1070,6 @@ input[type=submit],input[type=reset],input[type=button] {
   background-color: #e66432;
 }
 
-.frame_slideshow {
-  background-image: url(../images/slideshow_frame_black.png);
-}
 
 a .box_hover:hover,a .box_hover_min:hover {
   border-color: #fff!important;
@@ -1221,15 +1209,6 @@ a:hover.close_button,a:hover.next_button,a:hover.previous_button {
   color: #fff;
 }
 
-.white_ver .elastislide-wrapper nav .np_btn .btn_icon {
-  background-image: url(../images/nav.png)!important;
-  background-image: -Webkit-image-set(url(../images/nav.png) 1x,url(../images/nav@2x.png) 2x)!important;
-}
-
-.elastislide-wrapper nav .np_btn .btn_icon {
-  background-image: url(../images/nav_white.png)!important;
-  background-image: -Webkit-image-set(url(../images/nav_white.png) 1x,url(../images/nav_white@2x.png) 2x)!important;
-}
 
 blockquote,blockquote cite,blockquote p {
   color: #fbfbfb;
@@ -1984,14 +1963,6 @@ ul.nav-tabs>li {
   background-attachment: scroll!important;
 }
 
-.bg_pattern1 {
-  background-image: url(../images/bg_pattern1.png);
-}
-
-.bg_pattern3 {
-  background-image: url(../images/bg_pattern4.png);
-}
-
 .pricing-table .plan,.pricing-table h2 .price_circle {
   background: #2b3034;
 }
@@ -2047,6 +2018,9 @@ ul.nav-tabs>li {
   border-color: #ccc!important;
   border-style: solid!important;
   color: #fbfbfb!important;
+  width: 10em;
+  height: 2.5em;
+  margin-left: 4em;
 }
 
 .lightColorText .contactusForm .dashedBorder {

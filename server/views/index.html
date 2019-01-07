@@ -86,26 +86,28 @@
 
                                     <li><a href="/" class="first active"> <i class="fa fa-circle-o"></i>Home</a></li>
                                     <li><a href="#!about"> <i class="fa fa-circle-o"></i>About Us</a></li>
-                                    <li><a href="/blog"> <i class="fa fa-circle-o"></i> Blog</a></li>
+                                    <li><a href="/blog"> <i class="fa fa-circle-o"></i> Blogs</a></li>
                                     <li><a href="#!contactus" class="last"> <i class="fa fa-circle-o"></i> Contact us</a></li> 
                                                                 
                                     <!-- <div class="col-md-12 text-center"> -->
                                     <!-- signin    -->
 
                                         <form class="contactusForm" method="post" action="/login" id="signin">
+
                                             <div class="col-md-3">
-                                                <input class="col-md-12 transprentBg dashedBorder" placeholder="Your Email Address" type="email" name="temail" tabindex="2" required>
+                                                <input class="col-md-12 transprentBg dashedBorder" placeholder="Email" type="email" name="temail" tabindex="2" required>
                                             </div>
                 
                                             <div class="col-md-3"> 
-                                                <input class="col-md-12 transprentBg dashedBorder" placeholder="Your password" type="password" name="password" tabindex="3" required>
+                                                <input class="col-md-12 transprentBg dashedBorder" placeholder="Password" type="password" name="password" tabindex="3" required>
                                             </div>
                  
                                             <div class="col-md-3 textAlignCenter alignCenter">			 
                                                 <button name="submit" class="button medium transprentBg dashedBorder makeAnimate" type="submit" data-submit="...Sending">
-                                                    <i class="icon icon-basic-mail right_spacing" ></i> Sign-In
+                                                    <i class="icon icon-basic-mail right_spacing" ></i>Sign-In
                                                 </button> 
                                             </div>
+
                                         </form>
                                     <!-- </div> -->
 
@@ -170,34 +172,32 @@
 </div>
 
 <div class="container form_holder">
-                                    
-    <hr></hr>
-
-    <div class="container form_holder"><hr></hr>
-    </div><br><br><br><br>
-
-
 
     <div class="col-md-12 text-center">
+            <br><br><br>
         <h3>Sign-Up with Us</h3>
-    </div><br><br><br><br><br><br>
+    </div><br><br><br><br><br><br><br><br><br>
 
         <!-- signup    --> 
 
-        <form class="contactusForm" method="post" action="/signup" >
+        <form class="contactusForm" method="post" action="/api/registeruser" >
 
             <div class="col-md-3">   
-                <input class="col-md-12 transprentBg dashedBorder" placeholder="Your name" type="text" name="Name" tabindex="1" required autofocus>
+                <input class="col-md-12 transprentBg dashedBorder" placeholder="Name" type="text" name="Name" tabindex="1" required autofocus>
             </div>
 
             <div class="col-md-3">
-                <input class="col-md-12 transprentBg dashedBorder" placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+                <input class="col-md-12 transprentBg dashedBorder" placeholder="Email" type="email" name="email" tabindex="2" required>
             </div>
 
             <div class="col-md-3"> 
-                <input class="col-md-12 transprentBg dashedBorder" placeholder="Your Password" type="password" name="password" tabindex="3" required>
+                <input class="col-md-12 transprentBg dashedBorder" placeholder="Password" type="password" name="password" tabindex="3" required>
              </div>
- 
+
+             <div class="col-md-3"> 
+                <input class="col-md-12 transprentBg dashedBorder" placeholder="Confirm Password" type="password" name="cpassword" tabindex="3" required>
+             </div>
+
             <div class="col-md-3 textAlignCenter alignCenter">			 
                 <button name="submit" class="button medium transprentBg dashedBorder makeAnimate" type="submit" data-submit="...Sending">
                 <i class="icon icon-basic-mail right_spacing" ></i> Sign-Up</button> 

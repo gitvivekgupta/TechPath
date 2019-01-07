@@ -684,7 +684,7 @@ pre code {
 
 @media (min-width:992px) {
   .container {
-    width: 970px;
+    width: 100%;
   }
 }
 
@@ -1166,7 +1166,7 @@ pre code {
   }
 
   .col-md-3 {
-    width: 25%;
+    width: 14em;;
   }
 
   .col-md-2 {
@@ -2314,9 +2314,6 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
   transition: height .35s ease;
 }
 
-@font-face {
-  font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot.html);src:url(../fonts/glyphicons-halflings-regular.eot-.html#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff.html) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf.html) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg.html#glyphicons_halflingsregular) format('svg');
-}
 
 .glyphicon {
   top: 1px;

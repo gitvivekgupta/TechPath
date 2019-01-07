@@ -1,19 +1,15 @@
+
 var express = require('express');
 var router = express.Router();
-var bodyParser = require('body-parser')
-var mongoose = require("mongoose")
-var path = require('path')
-var cors = require('cors');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
 
 
-var ctrlevents = require('../controllers/eventhandlers');
-var login = require('../../server/routes');
+var ctrlevents = require('../controllers/users');
 
-// var ctrlReviews = require('../controllers/reviews');
-router.post('/login', ctrlevents.userlogin);
-router.post('/signup', ctrlevents.usersignup);
+// var ctrlreviews = require('../controllers/reviews');
+
+// router.post('/login', ctrlevents.userlogin);
+
+router.post('/registeruser', ctrlevents.user_sign_up);
 
 
 

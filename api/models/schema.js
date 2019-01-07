@@ -6,17 +6,17 @@ var UserSchema = new mongoose.Schema({
 
   Name: {
     type:String,
-    required: true,
+    required: true
   },
 
   email: {
     type:String,
-    required: true,
+    required: true
   },
                 
   password: {
     type:String,
-    required: true,
+    required: true
   }
 });
 

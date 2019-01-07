@@ -1242,7 +1242,7 @@ a.info {
   width: 100%;
   top: 0;
   left: 0;
-  background: url(../images/overlay_zoom.png) center center no-repeat;
+  
   zoom: 1;
   -ms-filter: "alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -1644,12 +1644,7 @@ a.close_button_pro {
   float: left;
 }
 
-.diamond_mask_img {
-  -webkit-mask-box-image: url(../images/diamond_mask.png);
-  -moz-mask-box-image: url(../images/diamond_mask.png);
-  -o-mask-box-image: url(../images/diamond_mask.png);
-  -ms-mask-box-image: url(../images/diamond_mask.png);
-}
+
 
 .clients_logo {
   width: 100%;
@@ -2358,50 +2353,37 @@ figure.itemOver .overlay .popup_overlay .popup_links {
 }
 
 .itemOver .popup_links .link_audio {
-  background-image: url(../images/hover_icons/icon_audio.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_audio.png) 1x,url(../images/hover_icons/icon_audio@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_image {
-  background-image: url(../images/hover_icons/icon_image.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_image.png) 1x,url(../images/hover_icons/icon_image@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_link {
-  background-image: url(../images/hover_icons/icon_link.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_link.png) 1x,url(../images/hover_icons/icon_link@2x.png) 2x);
+  
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_video {
-  background-image: url(../images/hover_icons/icon_video.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_video.png) 1x,url(../images/hover_icons/icon_video@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_desc {
-  background-image: url(../images/hover_icons/icon_desc.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_desc.png) 1x,url(../images/hover_icons/icon_desc@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_gallery {
-  background-image: url(../images/hover_icons/icon_gallery.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_gallery.png) 1x,url(../images/hover_icons/icon_gallery@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .itemOver .popup_links .link_portfolio {
-  background-image: url(../images/hover_icons/icon_portfolio.png);
-  background-image: -Webkit-image-set(url(../images/hover_icons/icon_portfolio.png) 1x,url(../images/hover_icons/icon_portfolio@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
 }

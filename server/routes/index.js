@@ -14,13 +14,14 @@ router.get('/publish', (req, res) => {
     res.render('publish');
 });
 
-router.get('/login', (req, res) => {
-    res.render('blog');
-});
+// router.get('/login', (req, res) => {
+//     res.render('blog');
+// });
 
 router.get('/signup', (req, res) => {
     res.render('signup');
 });
+
 
 
 module.exports = router;

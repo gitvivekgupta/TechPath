@@ -219,6 +219,8 @@ body {
   left: 0;
   float: right;
   padding: 0;
+  height: 3em;
+  margin-right: 30em;
 }
 
 .nav li {
@@ -235,7 +237,8 @@ ul.nav li a i {
   padding-top: 0!important;
   list-style: none;
   margin-top: -20px;
-  height: 50px;
+  height: 60px;
+  width: 30em;
 }
 
 .header .header_content ul li ul li a,.header_content ul li a,.header_content ul li ul li a {
@@ -664,8 +667,6 @@ hr.foooter_space {
 }
 
 .footer_close .btn_icon {
-  background-image: url(../images/sprite.png);
-  background-image: -Webkit-image-set(url(../images/sprite.png) 1x,url(../images/sprite@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: 0 -237px;
 }
@@ -727,8 +728,6 @@ hr.foooter_space {
   display: none;
   width: 45px;
   height: 40px;
-  background-image: url(../images/mobile_menu.png);
-  background-image: -Webkit-image-set(url(../images/mobile_menu.png) 1x,url(../images/mobile_menu@2x.png) 2x);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -919,8 +918,6 @@ hr.foooter_space {
 }
 
 .pgScrollUp .btn_icon {
-  background-image: url(../images/scrollup.png);
-  background-image: -Webkit-image-set(url(../images/scrollup.png) 1x,url(../images/scrollup@2x.png) 2x);
   background-repeat: no-repeat;
 }
 
@@ -948,8 +945,6 @@ hr.foooter_space {
 }
 
 .email_loading {
-  background: url(../images/loading.gif) center center no-repeat;
-  background-image: -Webkit-image-set(url(../images/loading.gif) 1x,url(../images/loading@2x.gif) 2x);
   height: 32px;
   width: 32px;
   position: absolute;
@@ -1084,11 +1079,11 @@ hr.foooter_space {
 }
 
 .fm_drag-cursor {
-  cursor: url(images/cursors/openhand.cur.html);
+  
 }
 
 .fm_draging-cursor {
-  cursor: url(images/cursors/closedhand.cur.html);
+  
 }
 
 video {
@@ -1165,8 +1160,6 @@ video {
 }
 
 .video_hover {
-  background: url(../images/video_over.png);
-  background: -Webkit-image-set(url(../images/video_over.png) 1x,url(../images/video_over@2x.png) 2x);
   cursor: pointer;
   display: inline-block;
   width: 75px;
@@ -1204,16 +1197,12 @@ video {
 
 .videoUnMute .btn_icon {
   display: block;
-  background-image: url(../images/video_button.png);
-  background-image: -Webkit-image-set(url(../images/video_button.png) 1x,url(../images/video_button@2x.png.html) 2x);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .videoMute .btn_icon {
   display: block;
-  background-image: url(../images/video_button.png);
-  background-image: -Webkit-image-set(url(../images/video_button.png) 1x,url(../images/video_button@2x.png.html) 2x);
   background-position: -32px 0;
   background-repeat: no-repeat;
 }
@@ -1532,7 +1521,7 @@ body.addBackground {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url(../images/loading_logo.png);
+  
   background-size: cover;
 }
 
@@ -1544,7 +1533,7 @@ body.addBackground {
   white-space: nowrap;
   width: 75px;
   height: 75px;
-  background-image: url(../images/loading_logo_mask.png);
+  
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;

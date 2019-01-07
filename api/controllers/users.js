@@ -1,63 +1,81 @@
 
-const passport = require('passport');
-var mongoose = require('mongoose');
+// const passport = require('passport');
+// var mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 var express = require('express');
-const Joi = require('joi');
+// const Joi = require('joi');
 
 var router = express.Router();
 
 require('../models/schema');
 
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
-
-
-
 /* GET signup data */
-module.exports.usersignup = (req, res) => {
+module.exports.user_sign_up = (req, res) => {
 
-  if (req.body.Name && req.body.email && req.body.password) {
+      Name: req.body.username;
+      email: req.body.email;
+      password: req.body.password;
+      cpassword: req.body.cpassword;
 
-    var userData = {
-      Name: req.body.username,
-      email: req.body.email,
-      password: req.body.password
-    }
+      console.log('ghfhghgh');
+      console.log(email);
+      console.log(password);
+      console.log(cpassword);
 
-    //hashing a password before saving it to the database
-    UserSchema.pre('save', (next) => {
-      var user = this;
+      req.checkBody('Name', 'Name is required').notEmpty();
+      req.checkBody('email', 'Email is required').notEmpty();
+      req.checkBody('password', 'Password is required').notEmpty();
+      req.checkBody('cpassword', 'Passwords do not match').equals(req.body.password);
 
-      bcrypt.hash(user.password, 10, (err, hash) => {
+      let errors = req.validationErrors();
 
-        if (err) {
-          return next(err);
-        }
-      
-        user.password = hash;
-        next();
+      if (err) {
+
+        res.render('register', {
+          errors:errors
+        });
+      }
+
+      else {
+
+        let newUser = new User({
+          Name:Name,
+          email:email,
+          password:password
+        })
+      }
+
+      bcrypt.genSalt(10, (err, salt) => {
+
+        bcrypt.hash(newUser.password, salt, (err, hash) => {
+
+          if(err) {
+
+            console.log(err);
+          }
+
+          newUser.password = hash;
+
+          newUser.save((err) => {
+
+            if(err) {
+
+              console.log(err);
+              return;
+            }
+
+            else {
+              req.flash('success', 'Welcome to TechPath');
+              req.redirect('/blog');
+            }
+
+          })
+
+        });
+
       })
 
-    });
-
-    //use schema.create to insert data into the db
-    User.create(userData, (err, user) => {
-      
-      if (err) {
-        return next(err);
-      } 
-      
-      else {
-        return res.redirect('/blog');
-      }
-    });
-  }
-
 };
 
 
@@ -86,65 +104,178 @@ module.exports.usersignup = (req, res) => {
 
 
 
-/* GET signin data */
-module.exports.userlogin = function(req, res) {
 
-  console.log('signing-in', req.body);
 
-  var email = req.body.email,
-  password = req.body.pwd;
 
-  Users.find(
-  {
-      email: email, 
-      password: password 
-  })
-  .then(function (user) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var sendJSONresponse = function(res, status, content) {
+//   res.status(status);
+//   res.json(content);
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* GET signin data */
+// module.exports.userlogin = function(req, res) {
+
+//   console.log('signing-in', req.body);
+
+//   var email = req.body.email,
+//   password = req.body.pwd;
+
+//   Users.find(
+//   {
+//       email: email, 
+//       password: password 
+//   })
+//   .then(function (user) {
     
-    if (!user) {
-      res.redirect('/');
-      alert("user not found");
-    } 
+//     if (!user) {
+//       res.redirect('/');
+//       alert("user not found");
+//     } 
     
-    else {
-      req.session.user = user.dataValues;
-      res.redirect('/blog');
-      sendJSONresponse(res, 400, 'Welcome');
-    }
-  });
+//     else {
+//       req.session.user = user.dataValues;
+//       res.redirect('/blog');
+//       sendJSONresponse(res, 400, 'Welcome');
+//     }
+//   });
 
-  if (err) {
-    alert(err);
-    sendJSONresponse(res, 400, err);
-  } 
-};
-
-
-
-
-
-const userSchema = Joi.object().keys( 
-  {
-  Name: Joi.string().required(),
-  email: Joi.string().email().required(),
-  password: Joi.string().regex(/^[a-zA-Z0-9]{6,30}$/).required()
-  }
-)
+//   if (err) {
+//     alert(err);
+//     sendJSONresponse(res, 400, err);
+//   } 
+// };
 
 
 
 
-/* Hash password */
-module.exports.hashPassword = async (password) => {
-  try {
-    const salt = await bcrypt.genSalt(10)
-    return await bcrypt.hash(password, salt)
-  } 
+
+// const userSchema = Joi.object().keys( 
+//   {
+//   Name: Joi.string().required(),
+//   email: Joi.string().email().required(),
+//   password: Joi.string().regex(/^[a-zA-Z0-9]{6,30}$/).required()
+//   }
+// )
+
+
+
+
+// /* Hash password */
+// module.exports.hashPassword = async (password) => {
+//   try {
+//     const salt = await bcrypt.genSalt(10)
+//     return await bcrypt.hash(password, salt)
+//   } 
   
-  catch(error) {
-    throw new Error('Hashing failed', error)
-  }
-}
+//   catch(error) {
+//     throw new Error('Hashing failed', error)
+//   }
+// }
 
 
 

@@ -41,6 +41,7 @@ body {
 }
 #wrapper {
     margin: auto;
+    margin-top: 5em;
 	width: 540px;
 	height:460px;
 	background: #1a1d20;

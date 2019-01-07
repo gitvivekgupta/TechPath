@@ -287,9 +287,9 @@
     float: right;
   }
   
-  .alignCenter {
+  /* .alignCenter {
     margin: 0 auto;
-  }
+  } */
   
   .noMargin {
     margin: 0;
